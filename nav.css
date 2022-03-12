@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  color: rgb(37, 58, 77);
+  background-color: white;
+}
+nav {
+  min-height: 10vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav h1,
+nav ul {
+  font-size: 1.5rem;
+  flex: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section h2 {
+  font-size: 5rem;
+  color: white;
+}
+.home {
+  background: linear-gradient(
+    to right top,
+    rgb(91, 114, 108),
+    rgb(138, 138, 192)
+  );
+}
+.projects {
+  background: linear-gradient(
+    to right top,
+    rgb(114, 99, 111),
+    rgb(179, 179, 153)
+  );
+}
+.contact {
+  background: linear-gradient(to right top, rgb(16, 16, 66), rgb(88, 88, 122));
+}
+.new1 {
+  position: absolute;
+  z-index: -2;
+  background: linear-gradient(
+    to right top,
+    rgb(91, 114, 108),
+    rgb(138, 138, 192)
+  );
+  transform: scale(2);
+  transition: all 0.5s ease;
+}
